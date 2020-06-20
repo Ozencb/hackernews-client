@@ -20,12 +20,25 @@ const Story = ({ storyId }) => {
         <a href={story.url}>{story.title}</a>
       </StoryTitle>
 
-      <StoryMeta data-testid="story-by">
+      <StoryMeta>
         <span>
-          <StoryMetaElement color="#000">By: </StoryMetaElement>
-          {story.by}
-          <StoryMetaElement margin="10px" color="#000">Time: </StoryMetaElement>
-          {mapTime(story.time)}
+
+          <StoryMetaElement data-testid="story-by" color="#000">
+            By:
+            <span>
+              {' '}
+              {story.by}
+            </span>
+          </StoryMetaElement>
+
+          <StoryMetaElement data-testid="story-time" margin="10px" color="#000">
+            Time:
+            <span>
+              {' '}
+              {mapTime(story.time)}
+            </span>
+          </StoryMetaElement>
+
         </span>
       </StoryMeta>
     </StoryWrapper>

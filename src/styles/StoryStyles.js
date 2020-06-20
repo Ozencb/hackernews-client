@@ -16,25 +16,23 @@ export const StoryWrapper = styled.section`
 `;
 
 export const StoryTitle = styled.h1`
-    margin-bottom: 5px;
-    font-size: 18px;
-    line-height: 1.8;
-    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 auto 0.5rem auto;
     text-decoration: none;
+    font-weight: bold;
 
     a {
         color: #2e2e2c;
         background-color: #f8dc3d;
         text-decoration: none;
+        padding: 3px;
     }
 `;
 
 export const StoryMeta = styled.div`
     font-style: italic;
-
-    > span:not(:first-child) {
-        margin-left: 10px;
-    } 
 
     > span:not(:first-child):before {
         content: '•';
@@ -44,6 +42,10 @@ export const StoryMeta = styled.div`
 
 export const StoryMetaElement = styled.span`
    font-weight: bold;
-   color: ${props => props.color || 'red'};
+   color: ${props => props.color || '#3F3F3F'};
    margin-left: ${props => props.margin || 0};
+
+   > span {
+       font-weight: normal;
+   }
 `;
