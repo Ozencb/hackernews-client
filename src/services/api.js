@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { filterFields } from '../utils/filterFields'
+import { filterFields } from '../selectors/filterFields'
 
 export const baseUrl = 'https://hacker-news.firebaseio.com/v0';
 export const newStoriesUrl = `${baseUrl}/newstories.json`;
