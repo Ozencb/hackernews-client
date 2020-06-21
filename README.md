@@ -8,5 +8,4 @@ Still a WIP
 
 Use the commands below to run:
 
-`npm i`
-`npm run start`
+`npm i && npm run start`
